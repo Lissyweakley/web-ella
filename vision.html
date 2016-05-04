@@ -5,9 +5,15 @@
 	<title>Document</title>
 	<script src="js/jquery.onepage-scroll.min.js"></script>
 	<script type="text/javascript" src="js/styles.js"></script>
-	<link href="styles.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/jquery.onepage-scroll.min.js"></script>
+	<link href="css/onepage-scroll.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+
+
 <div style="display:none">
 	<audio controls autoplay>
 	  <source src="audio/wish-your-heart-makes.mp3" type="audio/mpeg">
@@ -17,29 +23,42 @@
 <div class="veil">
 	<div class="menu-container">
 		<div class="menu">
-		<h2 class="close-me">Close the menu</h2>
-		<h1><a href="index.html">Home</a></h1>
-		<h1><a href="vision.html">Vision</a></h1>
-		<h1><a href="movie-clip.html">Movie Clip</a></h1>
-		<h1><a href="gallery.html">Gallery</a></h1>
-	</div>
-
-	<div class="mobile-menu">	
-	</div>
-
-	</div>
-	
+			<h2 class="close-me">Close the menu</h2>
+			<h1><a href="index.html">Home</a></h1>
+			<h1><a href="vision.html">Vision</a></h1>
+			<h1><a href="movie-clip.html">Movie Clip</a></h1>
+			<h1><a href="gallery.html">Gallery</a></h1>
+	    </div>
+	</div>	
 </div>
-
-<div class="main">
-<section><img class="stepmother" src="images/Cinderella_2015_45.jpg" alt="Cinderella_2015"></section>
-
-<section><img class="fairy-godmother" src="images/Cinderella_2015_50.jpg" alt="Cinderella_2015"></section>
-
-</div>
-
 
 <div class="nav"><img src="images/hamburger.png" alt="hamburger" width="45px" height="45px"></div>
+
+<div class="main">
+
+	<section>The Vision</section>
+
+	<section><div class="stepmother"></div></section>
+
+	<section>Dressing the Stepmother</section>
+
+	<section><div class="godmother"></div></section>
+
+	<section>Fairy Godmother</section>
+	
+	<section><div class="cinderella"></div></section>
+
+	<section>Cinderella</section>
+
+</div>
+
+<script>
+
+	$(".main").onepage_scroll();
+
+</script>
+
+
 	
 </body>
 </html>

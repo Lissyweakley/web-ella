@@ -1,6 +1,6 @@
 @font-face{
-	font-family: 'victoria-serif';
-	src: url("fonts/victoria-serif.ttf") format("truetype");
+	font-family: 'Before The Rain';
+	src: url("../fonts/BeforeTheRain_personal_use_demo.ttf") format("truetype");
 }
 
 
@@ -39,12 +39,12 @@ body{
 		color:#2f363b;
 		text-decoration:none;
 		font-size:18px;
-		line-height: 10%;
+		font-weight: bold;
+		line-height: 100%;
 		text-align: right;
 		padding-bottom: 15px;
 		padding-top: 15px;
-		text-transform: uppercase;
-		font-family: 'victoria-serif', sans-serif;
+		font-family: 'Before The Rain', sans-serif;
 	}
 
 
@@ -52,24 +52,24 @@ body{
 		color: #595957;
 		text-decoration:none;
 		font-size:22px;
-		line-height: 10%;
+		font-weight: bold;
+		line-height: 100%;
 		text-align: center;
 		padding-bottom: 15px;
 		padding-top: 15px;
-		text-transform: uppercase;
-		font-family: 'victoria-serif', sans-serif;
+		font-family: 'Before The Rain', sans-serif;
 	}
 
 	a {
 		color: #595957;
 		text-decoration:none;
 		font-size:22px;
-		line-height: 10%;
+		font-weight: bold;
+		line-height: 100%;
 		text-align: center;
 		padding-bottom: 15px;
 		padding-top: 15px;
-		text-transform: uppercase;
-		font-family: 'victoria-serif', sans-serif;
+		font-family: 'Before The Rain', sans-serif;
 	}
 
 	a:hover {
@@ -78,7 +78,7 @@ body{
 	}
 
 .cover{
-	background: url(images/cinderella-home.jpg) no-repeat;
+	background: url(../images/cinderella-home.jpg) no-repeat;
 	background-size: cover;
 	background-position: center top;
 	min-width: 100%;
@@ -88,46 +88,79 @@ body{
 	position: absolute;
 }
 
+@media screen and (max-width:600px){
+
+	.cover {
+		background: url(../images/cinderella-mobile.jpg) no-repeat;
+		background-size: cover;
+		background-position: center top;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		position: absolute;
+	}
+
+}
+
+/*------end mobile------*/
+
+@media screen and (min-width: 600px) and (max-width:900px){
+
+	.cover {
+		background: url(../images/cinderella-tablet.jpg) no-repeat;
+		background-size: cover;
+		background-position: center top;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		position: absolute;
+	}
+
+}
+
+/*------end tablet/ipad------*/
+
 .nav{
 	float: right;
 	padding: 2em;
 }
 
-
 .arrow-right{
 	position: absolute;
 	opacity: 0.5;
-	bottom: 5%;
-	right: 5%;
+	bottom: 3%;
+	right: 3%;
 	padding: 1em;
 }
 
 .arrow-right:hover{
 	position: absolute;
 	opacity: 1;
-	bottom: 5%;
-	right: 5%;
+	bottom: 3%;
+	right: 3%;
 	padding: 1em;
 }
 
 .arrow-left{
 	position: absolute;
 	opacity: 0.5;
-	bottom: 5%;
-	left: 5%;
+	bottom: 3%;
+	left: 3%;
 	padding: 1em;
 }
 
 .arrow-left:hover{
 	position: absolute;
 	opacity: 1;
-	bottom: 5%;
-	right: 5%;
+	bottom: 3%;
+	right: 3%;
 	padding: 1em;
 }
 
 .gallery-case{
-	background: url(images/gallery1.jpg) no-repeat;
+	background: url(../images/gallery1.jpg) no-repeat;
 	background-size: cover;
 	background-position: center top;
 	min-width: 100%;
@@ -138,7 +171,7 @@ body{
 }
 
 .stepmother{
-	background: url(images/Cinderella_2015_45.jpg) no-repeat;
+	background: url(../images/Cinderella_2015_45.jpg) no-repeat;
 	background-size: cover;
 	background-position: center top;
 	min-width: 100%;
@@ -149,7 +182,7 @@ body{
 }
 
 .fairy-godmother{
-	background: url(images/Cinderella_2015_50.jpg) no-repeat;
+	background: url(../images/Cinderella_2015_50.jpg) no-repeat;
 	background-size: cover;
 	background-position: center top;
 	min-width: 100%;
@@ -158,8 +191,6 @@ body{
 	height: auto;
 	position: absolute;
 }
-
-
 
 .fullscreen-bg {
     position: fixed;
@@ -184,4 +215,55 @@ body{
         -ms-transform: translate(-50%, -50%);
 	    transform: translate(-50%, -50%);
 }
+
+/*---------scroll dots color (start)--------*/
+
+.onepage-pagination li a.active:before {
+
+	border: 1px solid #b3a680;
+
+}
+
+.onepage-pagination li a:before {
+	background: #b3a680;
+}
+
+/*----------scroll pages------------*/
+
+.stepmother{
+	background: url(../images/stepmother-main.jpg) no-repeat;
+	background-size: cover;
+	background-position: center top;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	position: absolute;
+}
+
+.godmother{
+	background: url(../images/fairygodmother-main.jpg) no-repeat;
+	background-size: cover;
+	background-position: center top;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	position: absolute;
+}
+
+.cinderella{
+	background: url(../images/cinderella-main.jpg) no-repeat;
+	background-size: cover;
+	background-position: center top;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	position: absolute;
+}
+
+
+
+
 
