@@ -1,6 +1,6 @@
 @font-face{
-	font-family: 'Before The Rain';
-	src: url("../fonts/BeforeTheRain_personal_use_demo.ttf") format("truetype");
+	font-family: 'Georgia Italic';
+	src: url("../fonts/Georgia Italic.ttf") format("truetype");
 }
 
 
@@ -34,34 +34,47 @@ body{
 
 	}
 
+	.nav{
+		float: right;
+		padding: 2em;
+		z-index: 999;
+	}
+
+	.nav:hover{
+		opacity: 0.7;
+	}
+
 
 	h2{
 		color:#2f363b;
 		text-decoration:none;
 		font-size:18px;
-		font-weight: bold;
 		line-height: 100%;
 		text-align: right;
 		padding-bottom: 15px;
 		padding-top: 15px;
-		font-family: 'Before The Rain', sans-serif;
+		font-family: 'Georgia Italic', sans-serif;
+	}
+
+	h2:hover {
+		color: #74716c;
+		text-decoration:none;
 	}
 
 
 	h1 {
-		color: #595957;
+		color: #b3a680;
 		text-decoration:none;
 		font-size:22px;
-		font-weight: bold;
 		line-height: 100%;
 		text-align: center;
 		padding-bottom: 15px;
 		padding-top: 15px;
-		font-family: 'Before The Rain', sans-serif;
+		font-family: 'Georgia Italic', sans-serif;
 	}
 
 	a {
-		color: #595957;
+		color: #b3a680;
 		text-decoration:none;
 		font-size:22px;
 		font-weight: bold;
@@ -69,7 +82,7 @@ body{
 		text-align: center;
 		padding-bottom: 15px;
 		padding-top: 15px;
-		font-family: 'Before The Rain', sans-serif;
+		font-family: 'Georgia Italic', sans-serif;
 	}
 
 	a:hover {
@@ -120,12 +133,23 @@ body{
 
 }
 
+@media screen and (min-width: 900px) and (max-width:1100px){
+
+	.cover {
+		background: url(../images/cinderella-landscape.jpg) no-repeat;
+		background-size: cover;
+		background-position: center top;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		position: absolute;
+	}
+
+}
+
 /*------end tablet/ipad------*/
 
-.nav{
-	float: right;
-	padding: 2em;
-}
 
 .arrow-right{
 	position: absolute;
@@ -202,19 +226,29 @@ body{
     z-index: -100;
 }
 
+
 .fullscreen-bg__video {
     position: absolute;
     top: 50%;
     left: 50%;
     width: auto;
+   /* width: 100vw;*/
     height: auto;
     min-width: 100%;
     min-height: 100%;
+    z-index: -50;
     -webkit-transform: translate(-50%, -50%);
        -moz-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
 	    transform: translate(-50%, -50%);
 }
+
+div#video-controls{
+	background: #333;
+	padding: 10px; 
+}
+
+
 
 /*---------scroll dots color (start)--------*/
 
@@ -224,11 +258,100 @@ body{
 
 }
 
-.onepage-pagination li a:before {
-	background: #b3a680;
+.onepage-pagination li a:before {background: #b3a680;
 }
 
+	@media screen and (max-width:600px){
+
+			.onepage-pagination {
+				display: none;
+			}
+
+		}
+
+
 /*----------scroll pages------------*/
+
+section{
+	z-index: -9999;
+}
+
+.vision{
+	background: url(../images/vision-home.jpg) no-repeat;
+	background-size: cover;
+	background-position: center top;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	position: absolute;
+}
+
+		@media screen and (max-width:600px){
+
+			.vision {
+				background: url(../images/vision-mobile.jpg) no-repeat;
+				background-size: cover;
+				background-position: center top;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				position: absolute;
+			}
+
+		}
+
+		/*------end mobile------*/
+
+		@media screen and (min-width:1450px){
+
+			.vision {
+				background: url(../images/vision-widescreeen.jpg) no-repeat;
+				background-size: cover;
+				background-position: center top;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				position: absolute;
+			}
+
+		}
+
+		/*------end fullscreeen------*/
+
+		@media screen and (min-width: 600px) and (max-width:900px){
+
+			.vision {
+				background: url(../images/vision-tablet.jpg) no-repeat;
+				background-size: cover;
+				background-position: center top;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				position: absolute;
+			}
+
+		}
+
+		@media screen and (min-width: 900px) and (max-width:1100px){
+
+			.vision {
+				background: url(../images/vision-landscape.jpg) no-repeat;
+				background-size: cover;
+				background-position: center top;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				position: absolute;
+			}
+
+		}
+
+/*------end tablet/ipad------*/
 
 .stepmother{
 	background: url(../images/stepmother-main.jpg) no-repeat;
@@ -263,7 +386,229 @@ body{
 	position: absolute;
 }
 
+.step-concept{
+	background: url(../images/step-concept-home.jpg) no-repeat;
+	background-size: cover;
+	background-position: center top;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	position: absolute;
+}
 
+		@media screen and (max-width:600px){
 
+			.step-concept {
+				background: url(../images/step-mobile.jpg) no-repeat;
+				background-size: cover;
+				background-position: center top;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				position: absolute;
+			}
 
+		}
 
+		/*------end mobile------*/
+
+		@media screen and (min-width:1450px){
+
+			.step-concept {
+				background: url(../images/step-widescreeen.jpg) no-repeat;
+				background-size: cover;
+				background-position: center top;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				position: absolute;
+			}
+
+		}
+
+		/*------end fullscreeen------*/
+
+		@media screen and (min-width: 600px) and (max-width:900px){
+
+			.step-concept {
+				background: url(../images/step-tablet.jpg) no-repeat;
+				background-size: cover;
+				background-position: center top;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				position: absolute;
+			}
+
+		}
+
+		@media screen and (min-width: 900px) and (max-width:1100px){
+
+			.step-concept {
+				background: url(../images/step-landscape.jpg) no-repeat;
+				background-size: cover;
+				background-position: center top;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				position: absolute;
+			}
+
+		}
+
+/*------end tablet/ipad------*/
+
+.fairy-concept{
+	background: url(../images/fairy-concept-home.jpg) no-repeat;
+	background-size: cover;
+	background-position: center top;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	position: absolute;
+}
+
+		@media screen and (max-width:600px){
+
+			.fairy-concept {
+				background: url(../images/fairy-mobile.jpg) no-repeat;
+				background-size: cover;
+				background-position: center top;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				position: absolute;
+			}
+
+		}
+
+		/*------end mobile------*/
+
+		@media screen and (min-width:1450px){
+
+			.fairy-concept {
+				background: url(../images/fairy-widescreeen.jpg) no-repeat;
+				background-size: cover;
+				background-position: center top;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				position: absolute;
+			}
+
+		}
+
+		/*------end fullscreeen------*/
+
+		@media screen and (min-width: 600px) and (max-width:900px){
+
+			.fairy-concept {
+				background: url(../images/fairy-tablet.jpg) no-repeat;
+				background-size: cover;
+				background-position: center top;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				position: absolute;
+			}
+
+		}
+
+		@media screen and (min-width: 900px) and (max-width:1100px){
+
+			.fairy-concept {
+				background: url(../images/fairy-landscape.jpg) no-repeat;
+				background-size: cover;
+				background-position: center top;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				position: absolute;
+			}
+
+		}
+
+.ella-concept{
+	background: url(../images/ella-concept-home.jpg) no-repeat;
+	background-size: cover;
+	background-position: center top;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	position: absolute;
+}
+
+		@media screen and (max-width:600px){
+
+			.ella-concept {
+				background: url(../images/ella-mobile.jpg) no-repeat;
+				background-size: cover;
+				background-position: center top;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				position: absolute;
+			}
+
+		}
+
+		/*------end mobile------*/
+
+		@media screen and (min-width:1450px){
+
+			.ella-concept {
+				background: url(../images/ella-widescreeen.jpg) no-repeat;
+				background-size: cover;
+				background-position: center top;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				position: absolute;
+			}
+
+		}
+
+		/*------end fullscreeen------*/
+
+		@media screen and (min-width: 600px) and (max-width:900px){
+
+			.ella-concept {
+				background: url(../images/ella-tablet.jpg) no-repeat;
+				background-size: cover;
+				background-position: center top;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				position: absolute;
+			}
+
+		}
+
+		@media screen and (min-width: 900px) and (max-width:1100px){
+
+			.ella-concept {
+				background: url(../images/ella-landscape.jpg) no-repeat;
+				background-size: cover;
+				background-position: center top;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				position: absolute;
+			}
+
+		}

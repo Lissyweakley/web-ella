@@ -1,5 +1,6 @@
 //Once the html is loaded running event listeners
 $(document).ready(function($){
+	// document.getElementsByTagName('audio')[0].play();
 	//click event on navagationg image 
 	$(".nav").click(function() {
 		//display menu background 
@@ -84,6 +85,22 @@ $(document).ready(function($){
 		});
 
 //same as the right arrow button but for the left one
+
+function playPause(btn,vid){
+	var vid = document.getElementByClass(vid);
+	if (vid.paused) {
+		vid.play();
+		btn.innerHTML = "Pause";
+	} else {
+		vid.pause();
+		btn.innerHTML = "Play";
+	}
+
+
+}
+
+
+//the code bellow is a plugin - it is NOT my own (I cant really explain it)
 
 
 	$(".main").onepage_scroll({
