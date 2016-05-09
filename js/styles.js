@@ -86,18 +86,18 @@ $(document).ready(function($){
 
 //same as the right arrow button but for the left one
 
-function playPause(btn,vid){
-	var vid = document.getElementByClass(vid);
-	if (vid.paused) {
-		vid.play();
-		btn.innerHTML = "Pause";
-	} else {
-		vid.pause();
-		btn.innerHTML = "Play";
-	}
+// function playPause(btn,vid){
+// 	var vid = document.getElementByClass(fullscreen-bg__video);
+// 	if (vid.paused) {
+// 		vid.play();
+// 		btn.innerHTML = "Pause";
+// 	} else {
+// 		vid.pause();
+// 		btn.innerHTML = "Play";
+// 	}
 
 
-}
+// }
 
 
 //the code bellow is a plugin - it is NOT my own (I cant really explain it)
