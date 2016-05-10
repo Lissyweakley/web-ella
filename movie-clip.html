@@ -11,30 +11,27 @@
 <body>
 
 <div class="fullscreen-bg">
-    <video controls="controls" autoplay="autoplay" class="fullscreen-bg__video">
+    <video autoplay="autoplay" controls="controls" poster="img/gallery4.jpg" class="fullscreen-bg__video">
         <source src="video/Cinderella2015-TheBall.mp4" type="video/mp4">
     </video>
 </div>
 
-
 <div class="veil">
 	<div class="menu-container">
 		<div class="menu">
-			<h2 class="close-me">Close the menu</h2>
-			<h1><a href="index.html">Home</a></h1>
-			<h1><a href="vision.html">Vision</a></h1>
-			<h1><a href="movie-clip.html">Movie Clip</a></h1>
-			<h1><a href="gallery.html">Gallery</a></h1>
+			<div class="close-me"><img src="images/exit.png" alt="exit" width="18" height="18"></div>
+			<div class="links">
+				<h1><a href="index.html">Home</a></h1>
+				<h1><a href="vision.html">Vision</a></h1>
+				<h1><a href="movie-clip.html">Movie Clip</a></h1>
+				<h1><a href="gallery.html">Gallery</a></h1>
+			</div>
 	    </div>
 	</div>	
 </div>
 
-<div class="nav"><img src="images/hamburger.png" alt="hamburger" width="45px" height="45px"></div>
-
-<script>
-	$('video').trigger('play');
-	$('video').trigger('pause');
-</script>
+<div class="nav"><img src="images/hamburger.png" alt="hamburger" width="45" height="45"></div>
 	
 </body>
+
 </html>

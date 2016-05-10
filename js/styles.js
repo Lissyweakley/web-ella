@@ -3,6 +3,7 @@ $(document).ready(function($){
 	// document.getElementsByTagName('audio')[0].play();
 	//click event on navagationg image 
 	$(".nav").click(function() {
+		$(".nav").hide();
 		//display menu background 
 		$(".veil").toggle();
 		//animating menu to move in from right hand side 
@@ -12,6 +13,7 @@ $(document).ready(function($){
 	});
 //closing click function (return home page to normal)
 	$(".close-me").click(function() {
+		$(".nav").show();
 		$(".menu").animate({
 			right: ["-=220", "linear"]
 		},300);
@@ -26,9 +28,10 @@ $(document).ready(function($){
 	//animating the gallery images
 	var gallery = 1;
 		$(".arrow-right").click(function(){
+			var backGround;
 			if(gallery<6){
 				gallery++;
-				var backGround = "url(images/gallery"+gallery+".jpg) no-repeat"; 
+				backGround = "url(images/gallery"+gallery+".jpg) no-repeat"; 
 				$(".gallery-case").fadeOut("slow");
 				$(":animated").promise().done(function() {
 				$(".gallery-case").css({"background": backGround, "background-size": "cover", "background-position": "center top"});
@@ -61,9 +64,10 @@ $(document).ready(function($){
 
 
 		$(".arrow-left").click(function(){
+			var backGround;
 			if(gallery>1){
 				gallery--;
-				var backGround2 = "url(images/gallery"+gallery+".jpg) no-repeat";
+				backGround2 = "url(images/gallery"+gallery+".jpg) no-repeat";
 				$(".gallery-case").fadeOut("slow");
 				$(":animated").promise().done(function() {
 				$(".gallery-case").css({"background": backGround2, "background-size": "cover", "background-position": "center top"});

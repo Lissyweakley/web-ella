@@ -25,8 +25,8 @@ body{
 	.menu{
 		width: 220px;
 		height: 100%;
-		background-color: #ffffff;
-		opacity: 1;
+		background: rgba(255,255,255,.8);
+		
 		z-index: 99999;
 		position: absolute;
 		top: 0px;
@@ -45,54 +45,46 @@ body{
 	}
 
 
-	h2{
-		color:#2f363b;
-		text-decoration:none;
-		font-size:18px;
-		line-height: 100%;
-		text-align: right;
-		padding-bottom: 15px;
-		padding-top: 15px;
-		font-family: 'Georgia Italic', sans-serif;
+	.close-me{
+		float: right;
+		padding: 12px;
+		opacity: 0.5;
 	}
 
-	h2:hover {
-		color: #74716c;
-		text-decoration:none;
+	.close-me:hover {
+		opacity: 1;
+	}
+
+	.links{
+		padding-top: 33px;
 	}
 
 
 	h1 {
 		color: #b3a680;
 		text-decoration:none;
-		font-size:22px;
+		font-size:24px;
+		font-weight: lighter;
 		line-height: 100%;
 		text-align: center;
-		padding-bottom: 15px;
-		padding-top: 15px;
+		padding-bottom: 22px;
 		font-family: 'Georgia Italic', sans-serif;
 	}
 
 	a {
 		color: #b3a680;
 		text-decoration:none;
-		font-size:22px;
-		font-weight: bold;
-		line-height: 100%;
-		text-align: center;
-		padding-bottom: 15px;
-		padding-top: 15px;
-		font-family: 'Georgia Italic', sans-serif;
 	}
 
 	a:hover {
-		color: #74716c;
+		color: #7e6c40;
 		text-decoration:none;
 	}
 
 .cover{
 	background: url(../images/cinderella-home.jpg) no-repeat;
 	background-size: cover;
+	overflow: block;
 	background-position: center top;
 	min-width: 100%;
 	min-height: 100%;
@@ -106,6 +98,7 @@ body{
 	.cover {
 		background: url(../images/cinderella-mobile.jpg) no-repeat;
 		background-size: cover;
+		overflow: block;
 		background-position: center top;
 		min-width: 100%;
 		min-height: 100%;
@@ -123,6 +116,7 @@ body{
 	.cover {
 		background: url(../images/cinderella-tablet.jpg) no-repeat;
 		background-size: cover;
+		overflow: block;
 		background-position: center top;
 		min-width: 100%;
 		min-height: 100%;
@@ -138,6 +132,7 @@ body{
 	.cover {
 		background: url(../images/cinderella-landscape.jpg) no-repeat;
 		background-size: cover;
+		overflow: block;
 		background-position: center top;
 		min-width: 100%;
 		min-height: 100%;
@@ -186,6 +181,7 @@ body{
 .gallery-case{
 	background: url(../images/gallery1.jpg) no-repeat;
 	background-size: cover;
+	overflow: block;
 	background-position: center top;
 	min-width: 100%;
 	min-height: 100%;
@@ -197,6 +193,7 @@ body{
 .stepmother{
 	background: url(../images/Cinderella_2015_45.jpg) no-repeat;
 	background-size: cover;
+	overflow: block;
 	background-position: center top;
 	min-width: 100%;
 	min-height: 100%;
@@ -208,6 +205,7 @@ body{
 .fairy-godmother{
 	background: url(../images/Cinderella_2015_50.jpg) no-repeat;
 	background-size: cover;
+	overflow: block;
 	background-position: center top;
 	min-width: 100%;
 	min-height: 100%;
@@ -273,6 +271,7 @@ section{
 .vision{
 	background: url(../images/vision-home.jpg) no-repeat;
 	background-size: cover;
+	overflow: block;
 	background-position: center top;
 	min-width: 100%;
 	min-height: 100%;
@@ -285,6 +284,7 @@ section{
 
 			.vision {
 				background: url(../images/vision-mobile.jpg) no-repeat;
+				overflow: block;
 				background-size: cover;
 				background-position: center top;
 				min-width: 100%;
@@ -303,6 +303,7 @@ section{
 			.vision {
 				background: url(../images/vision-widescreeen.jpg) no-repeat;
 				background-size: cover;
+				overflow: block;
 				background-position: center top;
 				min-width: 100%;
 				min-height: 100%;
@@ -320,6 +321,7 @@ section{
 			.vision {
 				background: url(../images/vision-tablet.jpg) no-repeat;
 				background-size: cover;
+				overflow: block;
 				background-position: center top;
 				min-width: 100%;
 				min-height: 100%;
@@ -335,6 +337,7 @@ section{
 			.vision {
 				background: url(../images/vision-landscape.jpg) no-repeat;
 				background-size: cover;
+				overflow: block;
 				background-position: center top;
 				min-width: 100%;
 				min-height: 100%;
@@ -350,6 +353,7 @@ section{
 .stepmother{
 	background: url(../images/stepmother-main.jpg) no-repeat;
 	background-size: cover;
+	overflow: block;
 	background-position: center top;
 	min-width: 100%;
 	min-height: 100%;
@@ -361,6 +365,7 @@ section{
 .godmother{
 	background: url(../images/fairygodmother-main.jpg) no-repeat;
 	background-size: cover;
+	overflow: block;
 	background-position: center top;
 	min-width: 100%;
 	min-height: 100%;
@@ -372,6 +377,7 @@ section{
 .cinderella{
 	background: url(../images/cinderella-main.jpg) no-repeat;
 	background-size: cover;
+	overflow: block;
 	background-position: center top;
 	min-width: 100%;
 	min-height: 100%;
@@ -383,6 +389,7 @@ section{
 .step-concept{
 	background: url(../images/step-concept-home.jpg) no-repeat;
 	background-size: cover;
+	overflow: block;
 	background-position: center top;
 	min-width: 100%;
 	min-height: 100%;
@@ -396,6 +403,7 @@ section{
 			.step-concept {
 				background: url(../images/step-mobile.jpg) no-repeat;
 				background-size: cover;
+				overflow: block;
 				background-position: center top;
 				min-width: 100%;
 				min-height: 100%;
@@ -413,6 +421,7 @@ section{
 			.step-concept {
 				background: url(../images/step-widescreeen.jpg) no-repeat;
 				background-size: cover;
+				overflow: block;
 				background-position: center top;
 				min-width: 100%;
 				min-height: 100%;
@@ -430,6 +439,7 @@ section{
 			.step-concept {
 				background: url(../images/step-tablet.jpg) no-repeat;
 				background-size: cover;
+				overflow: block;
 				background-position: center top;
 				min-width: 100%;
 				min-height: 100%;
@@ -445,6 +455,7 @@ section{
 			.step-concept {
 				background: url(../images/step-landscape.jpg) no-repeat;
 				background-size: cover;
+				overflow: block;
 				background-position: center top;
 				min-width: 100%;
 				min-height: 100%;
@@ -460,6 +471,7 @@ section{
 .fairy-concept{
 	background: url(../images/fairy-concept-home.jpg) no-repeat;
 	background-size: cover;
+	overflow: block;
 	background-position: center top;
 	min-width: 100%;
 	min-height: 100%;
@@ -473,6 +485,7 @@ section{
 			.fairy-concept {
 				background: url(../images/fairy-mobile.jpg) no-repeat;
 				background-size: cover;
+				overflow: block;
 				background-position: center top;
 				min-width: 100%;
 				min-height: 100%;
@@ -490,6 +503,7 @@ section{
 			.fairy-concept {
 				background: url(../images/fairy-widescreeen.jpg) no-repeat;
 				background-size: cover;
+				overflow: block;
 				background-position: center top;
 				min-width: 100%;
 				min-height: 100%;
@@ -507,6 +521,7 @@ section{
 			.fairy-concept {
 				background: url(../images/fairy-tablet.jpg) no-repeat;
 				background-size: cover;
+				overflow: block;
 				background-position: center top;
 				min-width: 100%;
 				min-height: 100%;
@@ -522,6 +537,7 @@ section{
 			.fairy-concept {
 				background: url(../images/fairy-landscape.jpg) no-repeat;
 				background-size: cover;
+				overflow: block;
 				background-position: center top;
 				min-width: 100%;
 				min-height: 100%;
@@ -535,6 +551,7 @@ section{
 .ella-concept{
 	background: url(../images/ella-concept-home.jpg) no-repeat;
 	background-size: cover;
+	overflow: block;
 	background-position: center top;
 	min-width: 100%;
 	min-height: 100%;
@@ -548,6 +565,7 @@ section{
 			.ella-concept {
 				background: url(../images/ella-mobile.jpg) no-repeat;
 				background-size: cover;
+				overflow: block;
 				background-position: center top;
 				min-width: 100%;
 				min-height: 100%;
@@ -565,6 +583,7 @@ section{
 			.ella-concept {
 				background: url(../images/ella-widescreeen.jpg) no-repeat;
 				background-size: cover;
+				overflow: block;
 				background-position: center top;
 				min-width: 100%;
 				min-height: 100%;
@@ -582,6 +601,7 @@ section{
 			.ella-concept {
 				background: url(../images/ella-tablet.jpg) no-repeat;
 				background-size: cover;
+				overflow: block;
 				background-position: center top;
 				min-width: 100%;
 				min-height: 100%;
@@ -597,6 +617,7 @@ section{
 			.ella-concept {
 				background: url(../images/ella-landscape.jpg) no-repeat;
 				background-size: cover;
+				overflow: block;
 				background-position: center top;
 				min-width: 100%;
 				min-height: 100%;
